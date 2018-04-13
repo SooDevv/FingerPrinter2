@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.test.fingerprinter.MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Personal Electric Vehicles \nStart System"
+            android:textSize="23dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:background="#f9d752"
+            android:textColor="#000"
+           />
+
+    </LinearLayout>
+
+
+
+
+    <FrameLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:weightSum="1"
+        android:layout_weight="1.12">
+        <ImageButton
+            android:text="Button"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/currentPosition"
+            android:layout_gravity="right"
+            android:src="@drawable/placeholder3"
+            android:background="#00ffffff"
+            />
+
+        <TextView
+            android:background="#f43232"
+            android:height="1.5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/certificate"
+            android:layout_weight="0.07"
+            android:visibility="invisible"
+   />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="228dp"
+            android:src="@drawable/ic_fp_40px"
+            android:id="@+id/image"
+            android:layout_centerInParent="true"
+            android:paddingTop="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.67" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        android:textSize="20dp"
+        android:text="시동을 걸려면 지문을 인식하세요 "
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/textView3" />
+
+
+</LinearLayout>
